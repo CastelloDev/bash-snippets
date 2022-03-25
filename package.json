@@ -1,0 +1,22 @@
+{
+    "name": "bash-snippets",
+    "displayName": "bash-snippets",
+    "description": "A collection of bash snippets",
+    "publisher": "castello-dev",
+    "repository": "https://github.com/CastelloDev/bash-snippets.git",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.65.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "shellscript",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}

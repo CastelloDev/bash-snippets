@@ -1,0 +1,62 @@
+{
+	"shebang": {
+		"prefix": "shebang",
+		"body": [
+			"#!/bin/bash"
+		],
+		"description": "Shebang"
+	},
+	"echo": {
+		"prefix": "e",
+		"body": [
+			"echo \"${0:Hello World}\""
+		],
+		"description": "Echo"
+	},
+	"function": {
+		"prefix": "fn",
+		"body": [
+			"${1:FunctionName}() {",
+			"\t$0",
+			"}"
+		],
+		"description": "Function"
+	},
+	"if": {
+		"prefix": "if",
+		"body": [
+			"if [[ $1 ]]; then",
+			"\t$0",
+			"fi"
+		],
+		"description": "if block"
+	},
+	"if else": {
+		"prefix": "ife",
+		"body": [
+			"if [[ $1 ]]; then",
+			"\t$2",
+			"else",
+			"\t$0",
+			"fi"
+		],
+		"description": "if else block"
+	},
+	"elif": {
+		"prefix": "elif",
+		"body": [
+			"elif [[ $1 ]]; then",
+			"\t$0"
+		],
+		"description": "elif block"
+	},
+	"until": {
+		"prefix": "until",
+		"body": [
+			"until [[ $1 ]]; do",
+			"\t$0",
+			"done"
+		],
+		"description": "until block"
+	}
+}

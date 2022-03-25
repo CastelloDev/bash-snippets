@@ -1,6 +1,6 @@
-# bash-snippets README
+# bash-snippets
 
-This is the README for your extension "bash-snippets". After writing up a brief description, we recommend including the following sections.
+A collection of bash snippets
 
 ## Features
 
@@ -22,6 +22,16 @@ None
 
 ### 0.0.1
 
-Initial snippets
+- shebang : shebang
+- e : echo
+- fn : function
+- if : if
+- ife : if else
+- elif : elif
+- until : until
+
+### 0.0.2
+
+Added a logo
 
 **Enjoy!**

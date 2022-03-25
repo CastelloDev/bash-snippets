@@ -3,8 +3,9 @@
     "displayName": "bash-snippets",
     "description": "A collection of bash snippets",
     "publisher": "castello-dev",
-    "repository": "https://github.com/CastelloDev/bash-snippets.git",
-    "version": "0.0.1",
+    "repository": "https://github.com/CastelloDev/bash-snippets",
+    "icon": "logo.png",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.65.0"
     },

@@ -6,4 +6,14 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [0.0.1]
 
-- Initial release
+- shebang : shebang
+- e : echo
+- fn : function
+- if : if
+- ife : if else
+- elif : elif
+- until : until
+
+## [0.0.2]
+
+Added a logo

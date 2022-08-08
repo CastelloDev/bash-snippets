@@ -16,11 +16,31 @@
 	"function": {
 		"prefix": "fn",
 		"body": [
-			"${1:FunctionName}() {",
+			"${1:function_name}() {",
 			"\t$0",
 			"}"
 		],
 		"description": "Function"
+	},
+	"function with definitions": {
+		"prefix": "fnd",
+		"body": [
+		  "#######################################",
+		  "# Description",
+		  "# Globals:",
+		  "# - EXPORT_1 : which contains ...",
+		  "# Arguments:",
+		  "# - \\$1 : the first paramter (eg. param1)",
+		  "# Outputs:",
+		  "# Returns:",
+		  "#######################################",
+		  "${1:lib}::${2:function_name}() {",
+		  "  local -r ${3:PARAM_1}=\"\\${1:?\"${2:function_name} is missing a parameter\"}\"",
+		  "  $0",
+		  "  export ${4:EXPORT_1}",
+		  "}"
+		],
+		"description": "Function in a libary with definitions of params and exports"
 	},
 	"if": {
 		"prefix": "if",
@@ -58,5 +78,29 @@
 			"done"
 		],
 		"description": "until block"
+	},
+	"main": {
+		"prefix": "main",
+		"body": [
+		  "main() {",
+		  "}",
+		  "",
+		  "main \"$@\""
+		],
+		"description": "a main function declaration with passthrough of all paramters passed to the file"
+	},
+	"const": {
+		"prefix": "const",
+		"body": [
+		  "local -r ${1:VARIABLE}=\"${0}\""
+		],
+		"description": "creates a local readonly variable ie. a constant (this is meant for use within functions only)"
+	},
+	"TODO": {
+		"prefix": "todo",
+		"body": [
+		  "# TODO: (${1:author}) ${0:description}"
+		],
+		"description": "creates a local readonly variable ie. a constant"
 	}
 }

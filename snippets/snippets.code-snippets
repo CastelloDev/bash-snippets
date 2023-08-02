@@ -118,5 +118,15 @@
 			"done"
 		],
 		"description": "Creates a loop echoing all variables in an array"
+	},
+	"forindex": {
+		"prefix": "forindex",
+		"body": [
+			"for ${0:i} in {${1:0}..${2:5}\\}; do",
+			"echo \\$${0:i}",
+			"echo \\${MYARRAY[${0:i}]}",
+			"done"
+		],
+		"description": "Creates a loop echoing all indexes in a range"
 	}
 }

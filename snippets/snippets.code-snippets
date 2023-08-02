@@ -106,7 +106,7 @@
 	"array": {
 		"prefix": "array",
 		"body": [
-			"${1:MYARRAY}=(\"${2:element1}\" \"${3:element1}\")"
+			"${1:MYARRAY}=(\"${2:element1}\" \"${3:element2}\")"
 		],
 		"description": "Creates an array with two elements"
 	},

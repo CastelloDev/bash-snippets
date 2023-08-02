@@ -102,5 +102,21 @@
 		  "# TODO: (${1:author}) ${0:description}"
 		],
 		"description": "creates a local readonly variable ie. a constant"
+	},
+	"array": {
+		"prefix": "array",
+		"body": [
+			"${1:MYARRAY}=(\"${2:element1}\" \"${3:element1}\")"
+		],
+		"description": "Creates an array with two elements"
+	},
+	"forarray": {
+		"prefix": "forarray",
+		"body": [
+			"for ${0:element} in \\${${MYARRAY}[@]\\}; do",
+			"echo \\$${0:element}",
+			"done"
+		],
+		"description": "Creates a loop echoing all variables in an array"
 	}
 }
